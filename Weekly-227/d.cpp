@@ -38,9 +38,17 @@ public:
 
         sort(a.begin(), a.end());
         sort(b.begin(), b.end());
-        // debug(a, b);
-
-        int ans = LLONG_MAX;
+        // cout<<"Elements of a=->"<<endl;
+        // for(auto i:a){
+        //     cout<<i<<" ";
+        // }
+        // cout<<endl;
+        // cout<<"Elements of b=->"<<endl;
+        // for(auto i:b){
+        // cout<<i<<" ";
+        // }
+        // cout<<endl;
+        int ans = INT_MAX;
         for (auto i : a)
         {
             auto rem = lower_bound(b.begin(), b.end(), (goal - i)) - b.begin();
